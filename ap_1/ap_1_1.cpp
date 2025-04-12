@@ -9,7 +9,7 @@ struct smartPhone
     string color;
 };
 
-void test(int* p)
+void test(int *p)
 {
     *p = 100;
 }
@@ -17,7 +17,6 @@ void test(int* p)
 void upgrade(smartPhone &MyPhone)
 {
     MyPhone.internalStorage = 1024;
-
 }
 
 void display(smartPhone MyPhone)
@@ -32,15 +31,13 @@ int main()
 {
     int a = 10;
 
-    int* p = &a;
-
+    int *p = &a;
 
     *p = 20;
 
     // cout<<a;
 
-
-    int* ptr = new int;
+    int *ptr = new int;
 
     *ptr = 1;
 
@@ -59,29 +56,27 @@ int main()
 
     // display(p1);
 
-    int* list = new int[10];
+    int *list = new int[a];
 
-    for(int i=0;i<10; i++)
+    for (int i = 0; i < 10; i++)
     {
-        cout<<list[i]<<" ";
+        cout << list[i] << " ";
     }
 
-    int** list2d = new int*[10];
-    
-    for(int i=0;i< 10; i++)
+    int **list2d = new int *[10];
+
+    for (int i = 0; i < 10; i++)
     {
         list2d[i] = new int[15];
     }
 
-    for(int i=0;i<10 ; i++)
+    for (int i = 0; i < 10; i++)
     {
-        for(int j=0;j<10; j++)
+        for (int j = 0; j < 10; j++)
         {
-            cout<<list2d[i][j]<<" ";
+            cout << list2d[i][j] << " ";
         }
 
-        cout<<endl;
+        cout << endl;
     }
-
-
 }

@@ -10,7 +10,7 @@ class Person
 public:
     Person(string name, int a)
     {
-        this->name = name;
+        name = name;
         age = a;
     }
 
@@ -59,6 +59,8 @@ public:
 
 int main()
 {
+    string name;
+    cin >> name;
     Manager ali("ali", 20, 30, "mohandesi");
     ali.DisplayManager();
 
