@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 enum userType
@@ -69,11 +68,11 @@ public:
 int main()
 {
     Employee Amir;
-    cout << Amir.get_count();
+    cout << Amir.get_count() << endl;
 
     Admin Mammad;
-    cout << Mammad.get_count();
+    cout << Mammad.get_count() << endl;
 
     Manager Fateme;
-    cout << Fateme.get_count();
+    cout << Fateme.get_count() << endl;
 }
